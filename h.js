@@ -19,3 +19,20 @@ function combinarPropiedades(personas1, personas2) {
 
 	return personasCombinadas;
 }
+
+const array3 = [
+	{nombre: 'Queso', precio: 10 },
+	{nombre: 'Jamón', precio: 6 },
+	{nombre: 'Pan', precio: 3 },
+]
+
+function calcularPrecioTotal(array){
+	let suma = 0;
+	array.forEach(element => {
+	suma += element.precio;
+	});
+	return suma;
+}
+
+const resultado = calcularPrecioTotal(array3);
+console.log(resultado);
